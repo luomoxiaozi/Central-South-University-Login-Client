@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="using_categories_in_root_screen"
+    android:summary="Using Preference Categories"
+    android:icon="@null"
+    android:title="设置" >
+
+    <PreferenceCategory
+        android:key="set_screen"
+        android:summary="Preferences related to wifiNet"
+        android:title="快捷设置" >
+        <CheckBoxPreference
+            android:key="netON_selection_pref"
+            android:summaryOff="已关闭"
+            android:summaryOn="已开启"
+            android:defaultValue="true"
+            android:title="打开WiFi自动上线" />
+        <CheckBoxPreference
+            android:key="netOFF_selection_pref"
+            android:summaryOff="已关闭"
+            android:summaryOn="已开启"
+            android:defaultValue="true"
+            android:title="下线自动关闭wifi" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="about_screen"
+        android:summary="Preferences related to turnOnOffNet"
+        android:title="高级设置" >
+        <CheckBoxPreference
+            android:key="turnOnNet_selection_pref"
+            android:summaryOff="已关闭"
+            android:summaryOn="已开启"
+            android:defaultValue="true"
+            android:title="开机自动上网" />
+        <CheckBoxPreference
+            android:key="turnOffNet_selection_pref"
+            android:summaryOff="已关闭"
+            android:summaryOn="已开启"
+            android:defaultValue="true"
+            android:title="关机自动关闭wifi" />
+    </PreferenceCategory>
+
+    <Preference
+        android:enabled="false"
+        android:summary="\r\n\t\t本版本由杰哥工作室提供，如有建议请反馈到邮箱：wangjie_csu@163.com"
+        android:title="关于作者" />
+
+</PreferenceScreen>
